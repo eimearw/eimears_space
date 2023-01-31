@@ -18,7 +18,11 @@ def get_weather_desc_and_temp():
             "temp_max": temp_max}
 
 
-weather_dict = get_weather_desc_and_temp()
+def main():
+    weather_dict = get_weather_desc_and_temp()
 
-print("Today's forecast in Belfast is", weather_dict.get("description"))
-print("Lowest temp", weather_dict.get("temp_min"), "C", "highest temp ", weather_dict.get("temp_max"), "C")
+    print("Today's forecast in Belfast is", weather_dict.get("description"))
+    print("Lowest temp", weather_dict.get("temp_min"), "C", "highest temp ", weather_dict.get("temp_max"), "C")
+
+
+main()
